@@ -38,7 +38,8 @@ export default function Login(props: Props) {
         store.setRole(user.role)
         store.setNickname(user.nickname)
         //跳转至个人中心页面
-        history.push("/me")
+	consore.log(123)
+        history.push("/you")
       }
 	consore.log（456）
     } catch (error) { }

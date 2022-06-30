@@ -51,6 +51,20 @@ export default function Detail(props: Props) {
         }
       });
     }
+  const addCart = async () => {
+    let userInfo = await api.userInfo();
+    if (userInfo.stat !== "OK") {
+      show("请先登录")
+      history.push("/login")
+    } else {
+      api.addCart((params.id)).then(r => {
+        if (r.stat === "OK") {
+          show("已加入购物车")
+        } else {
+          show("加入购物车失败")
+        }
+      });
+    }
   }
 
 
