@@ -40,6 +40,7 @@ export default function Login(props: Props) {
         //跳转至个人中心页面
         history.push("/me")
       }
+	consore.log（456）
     } catch (error) { }
   }
 
