@@ -1,0 +1,84 @@
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #bbb;
+}
+.content i {
+  font-size: 6rem;
+}
+.content div {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+}
+.shopping {
+  flex: 1;
+  overflow: auto;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  .list {
+    width: 100%;
+    border-radius: 0.8rem;
+    background: #fff;
+  }
+}
+
+.delete {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  background: #fff;
+}
+.delete i {
+  font-size: 2.5rem;
+  color: #C6C6C6;
+}
+.chose {
+  flex: 1;
+  margin-left: 0.5rem;
+}
+.basedet{
+  height: 3.5rem;
+  border-radius: 4rem;
+  color: #fff;
+  background: #FF5000;
+  font-size: 1.6rem;
+  padding: 0 2rem;
+  outline: none;
+  border: none;
+}
+.notdet {
+  //.basedet();
+  //.basedet{
+    height: 3.5rem;
+    border-radius: 4rem;
+    color: #fff;
+    background: #FF5000;
+    font-size: 1.6rem;
+    padding: 0 2rem;
+    outline: none;
+    border: none;
+  //}
+  opacity: 0.5;
+}
+.det {
+  //.basedet();
+  //.basedet{
+    height: 3.5rem;
+    border-radius: 4rem;
+    color: #fff;
+    background: #FF5000;
+    font-size: 1.6rem;
+    padding: 0 2rem;
+    outline: none;
+    border: none;
+  //}
+}
+.orange{
+  color:#FF5000 !important;
+}

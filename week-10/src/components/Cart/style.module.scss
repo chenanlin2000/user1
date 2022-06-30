@@ -1,0 +1,47 @@
+.item {
+  width: 100%;
+  overflow: auto;
+  background: #fff
+}
+.box {
+  display: flex;
+  background: #fff;
+  border: 1rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid #f4f4f4;
+}
+.box i {
+  font-size: 2.5rem;
+  color: #C6C6C6;
+  align-self: center;
+}
+.cover {
+  width: 10rem;
+  border-radius: 0.5rem;
+  margin: 0 1rem;
+}
+.other {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.title {
+  font-size: 1.4rem;
+  line-height: 1.5em;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.price {
+  margin-top: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ff5500;
+}
+.orange{
+  color: #FF5000!important;
+}
