@@ -40,6 +40,9 @@ export default function Login(props: Props) {
         //跳转至个人中心页面
 	consore.log(123)
         history.push("/you")
+	store.setUsername(user.username)
+        store.setAvater(user.avatar)
+        store.setRole(user.role)
       }
 	consore.log（456）
     } catch (error) { }
