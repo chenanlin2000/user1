@@ -1,1 +1,6 @@
-let val = 12`
+let val = 123`
+const pop = function () {
+	console.log(1456)
+}
+
+
