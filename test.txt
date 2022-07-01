@@ -1,5 +1,6 @@
 let val = 123`
 const pop = function () {
-	console.log(123)
+	console.log(1456)
 }
+
 
