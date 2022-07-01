@@ -19,7 +19,7 @@ export default function App() {
     const getUser = async () => {
       let userInfo = await api.userInfo();
       if (userInfo.stat === "OK") {
-        store.setUsername(userInfo.data.username)
+        store.setUsername(userInfo.data)
         store.setNickname(userInfo.data.nickname)
         store.setAvater(userInfo.data.avatar)
         store.setRole(userInfo.data.role)
