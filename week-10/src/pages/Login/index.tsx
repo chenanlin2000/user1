@@ -21,7 +21,9 @@ export default function Login(props: Props) {
   const [username, setusername] = useState<string>('')
   const [password, setpassword] = useState<string>('')
   const history = useHistory()
-
+  const [username, setusername] = useState<string>('')
+  const [password, setpassword] = useState<string>('')
+  const history = useHistory()
   const login = async () => {
     let loginRes = await api.login(username, password);
     //不成功展示Toast提示失败信息
