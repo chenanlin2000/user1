@@ -3,7 +3,7 @@ Author: cal <2402429226@qq.com>
 Date:   Fri Jul 1 03:34:30 2022 +0800
 
     updata login and detail .tsx
-
+123456
 diff --git a/week-10/src/pages/Detail/index.tsx b/week-10/src/pages/Detail/index.tsx
 index 58ca2b6..8beaf1a 100644
 --- a/week-10/src/pages/Detail/index.tsx
