@@ -1,0 +1,31 @@
+commit 2be8b2ac0625f2c93815c9a15b30aaf9d630c879
+Author: cal <2402429226@qq.com>
+Date:   Fri Jul 1 03:34:30 2022 +0800
+
+    updata login and detail .tsx
+
+diff --git a/week-10/src/pages/Detail/index.tsx b/week-10/src/pages/Detail/index.tsx
+index 58ca2b6..8beaf1a 100644
+--- a/week-10/src/pages/Detail/index.tsx
++++ b/week-10/src/pages/Detail/index.tsx
+@@ -37,6 +37,20 @@ export default function Detail(props: Props) {
+     load();
+   })
+   //加入购物车
++  const addCart = async () => {
++    let userInfo = await api.userInfo();
++    if (userInfo.stat !== "OK") {
++      show("请先登录")
++      history.push("/login")
++    } else {
++      api.addCart((params.id)).then(r => {
++        if (r.stat === "OK") {
++          show("已加入购物车")
++        } else {
++          show("加入购物车失败")
++        }
++      });
++    }
+   const addCart = async () => {
+     let userInfo = await api.userInfo();
+     if (userInfo.stat !== "OK") {
